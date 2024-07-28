@@ -21,14 +21,14 @@
   
     <meta name="description" content="人有不为也，而后可以有为  1. 运行机制javac HelloWorld.java – 此命令将 HelloWorld.java 文件编译成 HelloWorld.class 文件 java HelloWorld – 此命令将 HelloWorld.class 文件解释并执行  2. 环境搭建2.1 JVM、JRE、JDK区别JVM ：英文名称（Java Virtual Machine），就是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java｜语言概述">
-<meta property="og:url" content="http://example.com/2024/07/27/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/index.html">
+<meta property="og:title" content="Java｜语言概述.md">
+<meta property="og:url" content="http://example.com/2024/07/28/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/index.html">
 <meta property="og:site_name" content="小蓝的计算机学习之路">
 <meta property="og:description" content="人有不为也，而后可以有为  1. 运行机制javac HelloWorld.java – 此命令将 HelloWorld.java 文件编译成 HelloWorld.class 文件 java HelloWorld – 此命令将 HelloWorld.class 文件解释并执行  2. 环境搭建2.1 JVM、JRE、JDK区别JVM ：英文名称（Java Virtual Machine），就是">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6341b5fa49b145c0b2418a2768adc403~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1198&h=162&s=19362&e=png&b=ffffff">
-<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e3c11232575746f4b9689f65dc92096b~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=338&h=179&s=21651&e=png&b=231f20">
-<meta property="og:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cfed2cf33af440699e6b20b8561ab107~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1058&h=498&s=118954&e=png&b=16191e">
+<meta property="og:image" content="http://example.com/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.png">
+<meta property="og:image" content="http://example.com/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/jdk%E5%85%B3%E7%B3%BB.png">
+<meta property="og:image" content="http://example.com/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/open-h.png">
 <meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8472f5d019048419fdbf26b8856775a~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=936&h=424&s=68296&e=png&b=181a1f">
 <meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/73f037dd1c0c4310bc39875da770e63e~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=653&h=183&s=12228&e=png&b=f3f3f3">
 <meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c10f20a51692442eaeac66014f7eef15~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=612&h=189&s=24600&e=png&b=282c34">
@@ -38,16 +38,15 @@
 <meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/41c73ef5360b42c2bc7471ceaacfcb56~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=475&h=340&s=51211&e=png&b=2d2e28">
 <meta property="og:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dc3955306f3b47f3ade9621374a49063~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=668&h=112&s=13037&e=png&b=202020">
 <meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c6aa2eca474e41e39cef5e7470f678a7~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=931&h=289&s=328228&e=png&b=f7f5f4">
-<meta property="article:published_time" content="2024-07-27T05:41:04.000Z">
-<meta property="article:modified_time" content="2024-07-27T16:11:17.289Z">
+<meta property="article:published_time" content="2024-07-28T14:13:26.000Z">
+<meta property="article:modified_time" content="2024-07-28T14:22:08.794Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6341b5fa49b145c0b2418a2768adc403~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1198&h=162&s=19362&e=png&b=ffffff">
+<meta name="twitter:image" content="http://example.com/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.png">
   
   
   
-  <title>Java｜语言概述 - 小蓝的计算机学习之路</title>
+  <title>Java｜语言概述.md - 小蓝的计算机学习之路</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Java｜语言概述"></span>
+            <span id="subtitle" data-typed-text="Java｜语言概述.md"></span>
           
         </div>
 
@@ -224,8 +223,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-27 13:41" pubdate>
-          2024年7月27日 下午
+        <time datetime="2024-07-28 22:13" pubdate>
+          2024年7月28日 晚上
         </time>
       </span>
     
@@ -284,7 +283,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Java｜语言概述</h1>
+            <h1 id="seo-header">Java｜语言概述.md</h1>
             
             
               <div class="markdown-body">
@@ -294,7 +293,7 @@
 </blockquote>
 <h1 id="1-运行机制"><a href="#1-运行机制" class="headerlink" title="1. 运行机制"></a>1. 运行机制</h1><p>javac HelloWorld.java – 此命令将 HelloWorld.java 文件编译成 HelloWorld.class 文件</p>
 <p>java HelloWorld – 此命令将 HelloWorld.class 文件解释并执行</p>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6341b5fa49b145c0b2418a2768adc403~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1198&h=162&s=19362&e=png&b=ffffff" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p><img src="/./Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6.png" srcset="/img/loading.gif" lazyload></p>
 <h1 id="2-环境搭建"><a href="#2-环境搭建" class="headerlink" title="2. 环境搭建"></a>2. 环境搭建</h1><h2 id="2-1-JVM、JRE、JDK区别"><a href="#2-1-JVM、JRE、JDK区别" class="headerlink" title="2.1 JVM、JRE、JDK区别"></a>2.1 JVM、JRE、JDK区别</h2><p><strong>JVM</strong> ：英文名称（Java Virtual Machine），就是我们耳熟能详的 Java 虚拟机。它只认识 xxx.class 这种类型的文件，它能够将 class 文件中的字节码指令进行识别并调用操作系统向上的 API 完成动作。所以说，jvm 是 Java 能够跨平台的核心，具体的下文会详细说明。</p>
 <p><strong>JRE</strong> ：英文名称（Java Runtime Environment），我们叫它：Java 运行时环境。它主要包含两个部分，jvm 的标准实现和 Java 的一些基本类库。它相对于 jvm 来说，多出来的是一部分的 Java 类库。如果你只是为了运行一下 java 程序的话，那么只用装 JRE 就可以了。</p>
 <p><strong>JDK</strong> ：英文名称（Java Development Kit），Java 开发工具包。jdk 是整个 Java 开发的核心，它集成了 jre 和一些好用的小工具。例如：javac.exe，java.exe，jar.exe 等。</p>
@@ -307,7 +306,7 @@
 <p>显然，这三者的关系是：一层层的嵌套关系。<strong>JDK&gt;JRE&gt;JVM</strong></p>
 <p><strong>JDK &#x3D; JRE + 开发工具集</strong></p>
 <p><strong>JRE &#x3D; Java 系统类库 + JVM</strong></p>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e3c11232575746f4b9689f65dc92096b~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=338&h=179&s=21651&e=png&b=231f20" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p><img src="/./Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/jdk%E5%85%B3%E7%B3%BB.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="2-2-Oracle-JDK-OpenJDK"><a href="#2-2-Oracle-JDK-OpenJDK" class="headerlink" title="2.2 Oracle JDK &amp; OpenJDK"></a>2.2 Oracle JDK &amp; OpenJDK</h2><p>总结：复制参考 <a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/basis/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#jvm-vs-jdk-vs-jre">链接</a></p>
 <ol>
 <li>Oracle JDK 大概每 6 个月发一次主要版本，而 OpenJDK 版本大概每三个月发布一次。但这不是固定的，我觉得了解这个没啥用处。<a target="_blank" rel="noopener" href="https://blogs.oracle.com/java-platform-group/update-and-faq-on-the-java-se-release-cadence">详情参见</a></li>
@@ -328,7 +327,7 @@
 <h2 id="2-4-Mca-环境变量配置"><a href="#2-4-Mca-环境变量配置" class="headerlink" title="2.4 Mca 环境变量配置"></a>2.4 Mca 环境变量配置</h2><p>如果是第一次配置环境变量，可以使用<code>touch .bash_profile</code> 创建一个 .bash_profile 的隐藏配置文件</p>
 <p>如果文件已存在，可以使用 <code>open -e .bash_profile</code> 命令打开文件</p>
 <p>open 参数 -e 的作用是 Opens with TextEdit.  使用文本编辑器打开</p>
-<p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cfed2cf33af440699e6b20b8561ab107~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1058&h=498&s=118954&e=png&b=16191e" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p><img src="/./Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/open-h.png" srcset="/img/loading.gif" lazyload></p>
 <p>打开 .bash_profile 后输入一下内容</p>
 <pre><code class="hljs">JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home
 PATH=$JAVA_HOME/bin:$PATH:
@@ -560,13 +559,6 @@ export PATH
     </div>
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/Java/" class="print-no-link">#Java</a>
-      
-    </div>
-  
 </div>
 
 
@@ -575,8 +567,8 @@ export PATH
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Java｜语言概述</div>
-      <div>http://example.com/2024/07/27/Java｜语言概述/</div>
+      <div>Java｜语言概述.md</div>
+      <div>http://example.com/2024/07/28/Java｜语言概述/</div>
     </div>
     <div class="license-meta">
       
@@ -588,7 +580,7 @@ export PATH
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年7月27日</div>
+          <div>2024年7月28日</div>
         </div>
       
       
