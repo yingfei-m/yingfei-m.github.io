@@ -26,23 +26,23 @@
 <meta property="og:site_name" content="小蓝的计算机学习之路">
 <meta property="og:description" content="人有不为也，而后可以有为  1. 运行机制javac HelloWorld.java – 此命令将 HelloWorld.java 文件编译成 HelloWorld.class 文件 java HelloWorld – 此命令将 HelloWorld.class 文件解释并执行  2. 环境搭建2.1 JVM、JRE、JDK区别JVM ：英文名称（Java Virtual Machine），就是">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/image.png">
-<meta property="og:image" content="http://example.com/img/image-3.png">
-<meta property="og:image" content="http://example.com/img/image-4.png">
-<meta property="og:image" content="http://example.com/img/image-5.png">
-<meta property="og:image" content="http://example.com/img/image-6.png">
-<meta property="og:image" content="http://example.com/img/image-7.png">
-<meta property="og:image" content="http://example.com/img/image-8.png">
-<meta property="og:image" content="http://example.com/img/image-9.png">
-<meta property="og:image" content="http://example.com/img/image-10.png">
-<meta property="og:image" content="http://example.com/img/image-11.png">
-<meta property="og:image" content="http://example.com/img/image-12.png">
-<meta property="og:image" content="http://example.com/img/image-13.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-3.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-4.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-5.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-6.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-7.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-8.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-9.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-10.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-11.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-12.png">
+<meta property="og:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-13.png">
 <meta property="article:published_time" content="2024-07-30T15:50:25.000Z">
-<meta property="article:modified_time" content="2024-07-30T16:04:57.045Z">
+<meta property="article:modified_time" content="2024-07-31T00:50:55.742Z">
 <meta property="article:author" content="小蓝_">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/image.png">
+<meta name="twitter:image" content="http://example.com/img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image.png">
   
   
   
@@ -293,7 +293,7 @@
 </blockquote>
 <h1 id="1-运行机制"><a href="#1-运行机制" class="headerlink" title="1. 运行机制"></a>1. 运行机制</h1><p>javac HelloWorld.java – 此命令将 HelloWorld.java 文件编译成 HelloWorld.class 文件</p>
 <p>java HelloWorld – 此命令将 HelloWorld.class 文件解释并执行</p>
-<p><img src="/../img/image.png" srcset="/img/loading.gif" lazyload alt="运行机制"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image.png" srcset="/img/loading.gif" lazyload alt="运行机制"></p>
 <h1 id="2-环境搭建"><a href="#2-环境搭建" class="headerlink" title="2. 环境搭建"></a>2. 环境搭建</h1><h2 id="2-1-JVM、JRE、JDK区别"><a href="#2-1-JVM、JRE、JDK区别" class="headerlink" title="2.1 JVM、JRE、JDK区别"></a>2.1 JVM、JRE、JDK区别</h2><p><strong>JVM</strong> ：英文名称（Java Virtual Machine），就是我们耳熟能详的 Java 虚拟机。它只认识 xxx.class 这种类型的文件，它能够将 class 文件中的字节码指令进行识别并调用操作系统向上的 API 完成动作。所以说，jvm 是 Java 能够跨平台的核心，具体的下文会详细说明。</p>
 <p><strong>JRE</strong> ：英文名称（Java Runtime Environment），我们叫它：Java 运行时环境。它主要包含两个部分，jvm 的标准实现和 Java 的一些基本类库。它相对于 jvm 来说，多出来的是一部分的 Java 类库。如果你只是为了运行一下 java 程序的话，那么只用装 JRE 就可以了。</p>
 <p><strong>JDK</strong> ：英文名称（Java Development Kit），Java 开发工具包。jdk 是整个 Java 开发的核心，它集成了 jre 和一些好用的小工具。例如：javac.exe，java.exe，jar.exe 等。</p>
@@ -306,7 +306,7 @@
 <p>显然，这三者的关系是：一层层的嵌套关系。<strong>JDK&gt;JRE&gt;JVM</strong></p>
 <p><strong>JDK &#x3D; JRE + 开发工具集</strong></p>
 <p><strong>JRE &#x3D; Java 系统类库 + JVM</strong></p>
-<p><img src="/../img/image-3.png" srcset="/img/loading.gif" lazyload alt="关系图"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-3.png" srcset="/img/loading.gif" lazyload alt="关系图"></p>
 <h2 id="2-2-Oracle-JDK-OpenJDK"><a href="#2-2-Oracle-JDK-OpenJDK" class="headerlink" title="2.2 Oracle JDK &amp; OpenJDK"></a>2.2 Oracle JDK &amp; OpenJDK</h2><p>总结：复制参考 <a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/basis/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#jvm-vs-jdk-vs-jre">链接</a></p>
 <ol>
 <li>Oracle JDK 大概每 6 个月发一次主要版本，而 OpenJDK 版本大概每三个月发布一次。但这不是固定的，我觉得了解这个没啥用处。<a target="_blank" rel="noopener" href="https://blogs.oracle.com/java-platform-group/update-and-faq-on-the-java-se-release-cadence">详情参见</a></li>
@@ -327,13 +327,13 @@
 <h2 id="2-4-Mca-环境变量配置"><a href="#2-4-Mca-环境变量配置" class="headerlink" title="2.4 Mca 环境变量配置"></a>2.4 Mca 环境变量配置</h2><p>如果是第一次配置环境变量，可以使用<code>touch .bash_profile</code> 创建一个 .bash_profile 的隐藏配置文件</p>
 <p>如果文件已存在，可以使用 <code>open -e .bash_profile</code> 命令打开文件</p>
 <p>open 参数 -e 的作用是 Opens with TextEdit.  使用文本编辑器打开</p>
-<p><img src="/../img/image-4.png" srcset="/img/loading.gif" lazyload alt="open-e"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-4.png" srcset="/img/loading.gif" lazyload alt="open-e"></p>
 <p>打开 <code>.bash_profile</code> 后输入以下内容</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home<br>PATH=<span class="hljs-variable">$JAVA_HOME</span>/bin:<span class="hljs-variable">$PATH</span>:<br><span class="hljs-built_in">export</span> JAVA_HOME<br><span class="hljs-built_in">export</span> PATH<br><br></code></pre></td></tr></table></figure>
 
 <p>输入完毕后保存，然后执行 <code>source .bash_profile</code> 使配置生效</p>
 <p>输入<code>java -version</code> 查看 jdk 版本</p>
-<p><img src="/../img/image-5.png" srcset="/img/loading.gif" lazyload alt="java版本"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-5.png" srcset="/img/loading.gif" lazyload alt="java版本"></p>
 <p>可以使用 <code>echo $PATH</code> 查询环境变量</p>
 <p>PATH 的语法为如下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#中间用冒号隔开</span><br><span class="hljs-built_in">export</span> PATH=<span class="hljs-variable">$PATH</span>:&lt;PATH 1&gt;:&lt;PATH 2&gt;:&lt;PATH 3&gt;:------:&lt;PATH N&gt;<br></code></pre></td></tr></table></figure>
@@ -346,12 +346,12 @@
 <li>变量名：JAVA_HOME</li>
 <li>变量值：C:\Java\jdk1.8.0_311</li>
 </ul>
-<p><img src="/../img/image-6.png" srcset="/img/loading.gif" lazyload alt="编辑系统变量"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-6.png" srcset="/img/loading.gif" lazyload alt="编辑系统变量"></p>
 <ul>
 <li>然后找的 PATH 双击&#x2F;编辑，新建 <code>%JAVA_HOME%\bin</code> 点击确认，后配置完毕</li>
 <li>验证是否成功</li>
 </ul>
-<p><img src="/../img/image-7.png" srcset="/img/loading.gif" lazyload alt="验证"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-7.png" srcset="/img/loading.gif" lazyload alt="验证"></p>
 <h2 id="2-6-classpath-配置说明"><a href="#2-6-classpath-配置说明" class="headerlink" title="2.6 classpath 配置说明"></a>2.6 classpath 配置说明</h2><p>目前发现网上很多的博客都会让配置 classpath 环境变量，如下面的两行的几行内容，首先我们先弄明白这个 classpath 的作用是什么，作用是指定类搜索路径</p>
 <ul>
 <li><p>mac 系统</p>
@@ -390,7 +390,7 @@
 <p>上述内容摘自这个链接 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/ideal-20/p/11050114.html">链接</a></p>
 <h1 id="3-HelloWorld-java"><a href="#3-HelloWorld-java" class="headerlink" title="3. HelloWorld.java"></a>3. HelloWorld.java</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;Hello World&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p><img src="/../img/image-8.png" srcset="/img/loading.gif" lazyload alt="运行"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-8.png" srcset="/img/loading.gif" lazyload alt="运行"></p>
 <h1 id="4-Notepad-配置"><a href="#4-Notepad-配置" class="headerlink" title="4. Notepad++ 配置"></a>4. Notepad++ 配置</h1><p>为了前期多练练，选择 Notepad++ 作为编辑器，Notepad++ 安装插件后可以直接编译运行 java 代码</p>
 <ol>
 <li>在 Notepad++ 安装 NppExce 插件</li>
@@ -400,8 +400,8 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">NPP_SAVE<br>javac.exe <span class="hljs-string">&quot;<span class="hljs-subst">$(FILE_NAME)</span>&quot;</span><br>java.exe <span class="hljs-string">&quot;<span class="hljs-subst">$(NAME_PART)</span>&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="/../img/image-9.png" srcset="/img/loading.gif" lazyload alt="NppExce"></p>
-<p><img src="/../img/image-10.png" srcset="/img/loading.gif" lazyload alt="运行"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-9.png" srcset="/img/loading.gif" lazyload alt="NppExce"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-10.png" srcset="/img/loading.gif" lazyload alt="运行"></p>
 <h1 id="5-注释（comment）"><a href="#5-注释（comment）" class="headerlink" title="5. 注释（comment）"></a>5. 注释（comment）</h1><p>Java 支持三种注释方式：</p>
 <ul>
 <li>单行注释<ul>
@@ -515,11 +515,11 @@
 </tr>
 </tbody></table>
 <h2 id="5-2-javadoc-输出什么"><a href="#5-2-javadoc-输出什么" class="headerlink" title="5.2 javadoc 输出什么"></a>5.2 javadoc 输出什么</h2><p>javadoc 工具将你的 Java 成员源代码作为输入，输出一些包含你程序注释的 HTML 文件，每个类的信息都将在独自的 HTML 文件里，javadoc 也可以输出继承的树形结构和索引，具体 javadoc 工具格式可以通过 <code>javadoc -help</code> 获取帮助信息。<br />通过运行 javadoc 命令输出程序的 HTML 文档，如下图所示，运行完毕会生成 mydoc 文件夹，里面就是输出的 HTML 文档。</p>
-<p><img src="/../img/image-11.png" srcset="/img/loading.gif" lazyload alt="javadoc"></p>
-<p><img src="/../img/image-12.png" srcset="/img/loading.gif" lazyload alt="mydoc"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-11.png" srcset="/img/loading.gif" lazyload alt="javadoc"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-12.png" srcset="/img/loading.gif" lazyload alt="mydoc"></p>
 <h1 id="6-Mac安装多个Java版本"><a href="#6-Mac安装多个Java版本" class="headerlink" title="6. Mac安装多个Java版本"></a>6. Mac安装多个Java版本</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43589025/article/details/129941848">参考链接</a></p>
 <p>JDK默认安装在&#x2F;Library&#x2F;Java目录下，打开访达，通过shift+command+g直达文件，如果安装成功，&#x2F;Library&#x2F;Java&#x2F;JavaVirtualMachines目录下，会有两个JDK：</p>
-<p><img src="/../img/image-13.png" srcset="/img/loading.gif" lazyload alt="Library"></p>
+<p><img src="/../img/Java%EF%BD%9C%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/image-13.png" srcset="/img/loading.gif" lazyload alt="Library"></p>
 <p>接下来，打开终端，输入<code>vim \~/.bash\_profile</code> 编辑配置文件</p>
 <p>在配置文件中，配置成以下内容，通过指令 jdk8 &#x2F; jdk17 进行版本的切换</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">JAVA_8_HOME=$(/usr/libexec/java_home -v 1.8.0)<br>JAVA_17_HOME=$(/usr/libexec/java_home -v 17)<br><br><span class="hljs-comment"># 设置默认JDK版本</span><br><span class="hljs-built_in">export</span> JAVA_HOME=<span class="hljs-variable">$JAVA_8_HOME</span><br><br><span class="hljs-comment"># 配置alias命令动态切换JDK版本</span><br><span class="hljs-built_in">alias</span> jdk8=<span class="hljs-string">&quot;export JAVA_HOME=<span class="hljs-variable">$JAVA_8_HOME</span>&quot;</span><br><span class="hljs-built_in">alias</span> jdk17=<span class="hljs-string">&quot;export JAVA_HOME=<span class="hljs-variable">$JAVA_17_HOME</span>&quot;</span><br></code></pre></td></tr></table></figure>
