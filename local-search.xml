@@ -15,8 +15,6 @@
       
       <category>JavaSE</category>
       
-      <category>面向对象下</category>
-      
     </categories>
     
     
@@ -35,8 +33,6 @@
     <categories>
       
       <category>JavaSE</category>
-      
-      <category>面向对象下</category>
       
     </categories>
     
@@ -57,8 +53,6 @@
       
       <category>JavaSE</category>
       
-      <category>面向对象中</category>
-      
     </categories>
     
     
@@ -77,8 +71,6 @@
     <categories>
       
       <category>JavaSE</category>
-      
-      <category>面向对象中</category>
       
     </categories>
     
@@ -105,8 +97,6 @@
       
       <category>JavaSE</category>
       
-      <category>面向对象中</category>
-      
     </categories>
     
     
@@ -126,8 +116,6 @@
       
       <category>JavaSE</category>
       
-      <category>面向对象中</category>
-      
     </categories>
     
     
@@ -146,8 +134,6 @@
     <categories>
       
       <category>JavaSE</category>
-      
-      <category>面向对象中</category>
       
     </categories>
     
@@ -176,7 +162,7 @@
   
   
   <entry>
-    <title>Java｜面向对象（上）</title>
+    <title>Java｜面向对象上</title>
     <link href="/2024/07/31/10333668.html"/>
     <url>/2024/07/31/10333668.html</url>
     
